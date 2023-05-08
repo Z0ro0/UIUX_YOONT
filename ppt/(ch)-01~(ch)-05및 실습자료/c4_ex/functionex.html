@@ -7,6 +7,20 @@
 <script>
 //그러나 변수에 함수를 할당(assign)할 수 있을까?
 
+function addOne(num){
+    return num+1;
+};
+//전달된 인자에 1을 더하는 간단한 함수 정의
+
+var plusOne = addOne;
+//addOne()이라고 함수를 호출한 것이 아니라 addOne 함수 이름만 사용하여  plusOne이란 변수에 함수 할당
+
+var result = plusOne(1);
+alert(result);
+
+</script>
+</body>
+</html>
 
 		
 		
